@@ -226,7 +226,6 @@ public class BotShoutCastMusicBroadcast implements BotGlobal
 			@Override
 			public void onClientMoved(ClientMovedEvent arg0) {
 				// TODO Auto-generated method stub
-				enviaMusicaAtual();
 			}
 
 			@Override
