@@ -238,7 +238,7 @@ public class BotShoutCastMusicBroadcast implements BotGlobal
 	}
 	public void enviaMusicaAtual()
 	{
-		enviaMensagemSala("Musica Atual: "+getMusicaAtual());
+		enviaMensagemSala("[B][COLOR=#0537dc]Musica Atual:[/COLOR] [COLOR=#26c27a]"+getMusicaAtual()+"[/COLOR][/B]");
 	}
 	public String getMusicaAtual()
 	{
