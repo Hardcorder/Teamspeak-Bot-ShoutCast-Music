@@ -10,7 +10,7 @@ Contribute for this program.
 TeamSpeak that you can see the bot in action: ts.htlv-team.com
 
 Know bugs:
-  * FIXED * - Sends 2 messages to a user that enter's on teamseak server. * FIXED *
+ * FIXED * - Sends 2 messages to a user that enter's on teamseak server. * FIXED *
  - If some music bot is playing on a Teamspeak3 server the bot probably will send the next music 10 sec before the music change, that happens because the music bots are always delayed.
 
 What you can do:
