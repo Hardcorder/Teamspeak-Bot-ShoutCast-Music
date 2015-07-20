@@ -9,11 +9,11 @@ public class Principal
 	private static int portaTs = 9987; // Normally this is the first teamspeak port
 	private static String usernameTs = "Username"; // Guest SErver Query Login
 	private static String passwordTs = "Password"; // guest Server Query Password
-	private static String icecastStream = "http://ShoutCastIp:ShoutCastPort/currentsong?sid=StreamIdNormallyIs1";
+	private static String shoutcastStream = "http://ShoutCastIp:ShoutCastPort/currentsong?sid=StreamIdNormallyIs1";
 
 	public static void main(String[] args) 
 	{
-		BotShoutCastMusicBroadcast botShoutCast = new BotShoutCastMusicBroadcast(ipTs, portaTsQuery, portaTs, usernameTs, passwordTs, icecastStream);
+		BotShoutCastMusicBroadcast botShoutCast = new BotShoutCastMusicBroadcast(ipTs, portaTsQuery, portaTs, usernameTs, passwordTs, shoutcastStream);
 		botShoutCast.conectar();
 		botShoutCast.setNome("Bot Name[Htlv-team.com]");
 		botShoutCast.iniciaEventos();

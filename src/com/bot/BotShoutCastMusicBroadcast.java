@@ -43,16 +43,16 @@ public class BotShoutCastMusicBroadcast implements BotGlobal
 
 	private String nome = "Htlv-team.com Bot";
 	
-	private String icecastStream = "http://188.93.234.224:8005/currentsong?sid=1";
+	private String shoutcastStream = "http://188.93.234.224:8005/currentsong?sid=1";
 	
-	public BotShoutCastMusicBroadcast(String ip, int porta, int portaTs, String utilizador, String password, String icecastStream)
+	public BotShoutCastMusicBroadcast(String ip, int porta, int portaTs, String utilizador, String password, String shoutcastStream)
 	{
 		this.ip = ip;
 		this.porta = porta;
 		this.portaTs = portaTs;
 		this.utilizador = utilizador;
 		this.password = password;
-		this.icecastStream = icecastStream;
+		this.shoutcastStream = shoutcastStream;
 	}
 	
 	@Override
@@ -243,7 +243,7 @@ public class BotShoutCastMusicBroadcast implements BotGlobal
 	{
 		 URL icecast;
 		try {
-			icecast = new URL(icecastStream);
+			icecast = new URL(shoutcastStream);
 			URLConnection yc = icecast.openConnection();
 	         BufferedReader in = new BufferedReader(new InputStreamReader(
 	                 yc.getInputStream(), "ISO-8859-1"));
